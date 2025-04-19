@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cryptography Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>🧠 Cryptography Quiz</h1>
+    <div id="question-container">
+      <div class="timer">⏳ Time left: <span id="timer">15</span>s</div>
+      <p id="question"></p>
+      <ul id="options"></ul>
+    </div>
+    <button id="next-btn" class="hidden">Next</button>
+    <div id="result" class="hidden">
+      <h2>Your Score: <span id="score"></span></h2>
+      <p>Best Score: <span id="best-score"></span></p>
+      <button onclick="location.reload()">Restart</button>
+    </div>
+  </div>
+  <audio id="correct-sound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+  <audio id="wrong-sound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
